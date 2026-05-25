@@ -24,6 +24,16 @@ npm install
 npm run dev
 ```
 
+### Frontend environment
+A local `.env` file is included in `Frontend/` to make the API base URL configurable.
+
+### What’s new
+- Backend now exposes a single task API implementation and avoids duplicate routes.
+- Added `GET`, `POST`, `DELETE`, and `PATCH /api/tasks/{id}/toggle` support for task management.
+- Task model now includes completion state and a creation timestamp.
+- Frontend now supports deleting tasks and toggling completion state.
+- Added loading/error UI and responsive task card styling.
+
 ## CI
 A GitHub Actions workflow runs a build for the backend and frontend on pushes and pull requests.
 
